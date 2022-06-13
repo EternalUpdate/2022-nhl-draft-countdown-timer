@@ -15,10 +15,7 @@ function startCountdown() {
     document.getElementById("days").innerHTML = padNum(days);
     document.getElementById("hours").innerHTML = padNum(hours);
     document.getElementById("minutes").innerHTML = padNum(minutes);
-    document.getElementById("seconds").innerHTML = padNum(seconds).replace(
-      " : ",
-      ""
-    );
+    document.getElementById("seconds").innerHTML = padNum(seconds);
   }
 
   updateCountdown();
@@ -38,10 +35,10 @@ function padNum(n) {
   } else if (n == 0) {
     return "00";
   } else if (n < 10 && n > 0) {
-    n = "0" + n + " : ";
+    n = "0" + n;
     return n;
   } else {
-    return n + " : ";
+    return n;
   }
 }
 

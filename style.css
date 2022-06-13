@@ -28,22 +28,18 @@
     justify-content: left;
     align-items: center;
     width: 100%;
+    padding: 1rem;
 }
 
 .logo {
-    width: 17vmin;
+    width: 120px;
     height: auto;
     margin: 1.5rem;
 }
 
 .title h1{
     color: white;
-    font-size: 5vmin;
     text-shadow: 5px 5px 5px rgb(98, 18, 18);
-}
-
-.title span {
-    font-size: 4vmin;
 }
 
 .countdown-timer {
@@ -65,19 +61,11 @@
 }
 
 .countdown-timer div {
-    margin: 3vw;
-}
-
-.countdown-timer p {
-    font-size: 11vmin;
-}
-
-.countdown-timer span {
-    font-size: 3vmin;
+    margin: 5vw;
 }
 
 .bottom-container {
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     position: relative;
 }
@@ -93,4 +81,102 @@
 
 .bottom-container a {
     color: white;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 300px) {
+    .title-container {
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    .logo {
+        width: 30vw;
+    }
+
+    .title h1 {
+        font-size: 8vmin;
+    }
+
+    .title span {
+        font-size: 5vmin;
+    }
+
+    .countdown-timer p {
+        font-size: 2.3rem;
+    }
+
+    .countdown-timer span {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .title-container {
+        justify-content: center;
+    }
+
+    .logo {
+    width: 6rem;
+    }
+
+    .title h1 {
+        font-size: 1.6rem;
+    }
+
+    .title span {
+        font-size: 1.1rem;
+    }
+
+    .countdown-timer p {
+        font-size: 3.2rem;
+    }
+
+    .countdown-timer span {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        width: 6rem;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .title span {
+        font-size: 1.5rem;
+    }
+
+    .countdown-timer p {
+        font-size: 4.5rem;
+    }
+
+    .countdown-timer span {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+    width: 11rem;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title span {
+        font-size: 2rem;
+    }
+
+    .countdown-timer p {
+        font-size: 6rem;
+    }
+
+    .countdown-timer span {
+        font-size: 1.3rem;
+    }
 }
