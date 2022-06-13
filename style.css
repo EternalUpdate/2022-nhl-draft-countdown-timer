@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(169, 48, 74);
+    background: linear-gradient(180deg, rgb(155, 25, 25) 0%, rgb(165, 19, 19) 50%, rgb(151, 22, 22) 100%);
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    padding: 25px;
+    margin-left: -50px;
+}
+
+.title h1{
+    color: white;
+    font-size: 55px;
+    text-shadow: 5px 5px 5px rgb(98, 18, 18);
+}
+
+.title span {
+    font-size: 45px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+    border-top: 20px;
+    border-bottom: 20px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    color: white;
+    text-shadow: 10px 10px 10px rgb(14, 19, 76);
+    background-color: rgb(30, 41, 109);
+    background: linear-gradient(180deg, rgb(20, 66, 167) 0%, rgb(20, 46, 134) 50%, rgb(23, 38, 122) 100%);
+}
+
+.countdown-timer div {
+    margin: 3vw;
+}
+
+.countdown-timer p {
+    font-size: 110px;
+}
+
+.countdown-timer span {
+    font-size: 20px;
+}
+
+.body-container button {
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 12px 25px;
+    margin: 30px;
+    color:white;
+    cursor: pointer;
+}
