@@ -26,23 +26,25 @@
 .title-container {
     display: flex;
     flex-direction: row;
+    justify-content: left;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
-    width: 200px;
-    padding: 25px;
-    margin-left: -50px;
+    width: 17vmin;
+    height: auto;
+    margin: 1.5rem;
 }
 
 .title h1{
     color: white;
-    font-size: 55px;
+    font-size: 5vmin;
     text-shadow: 5px 5px 5px rgb(98, 18, 18);
 }
 
 .title span {
-    font-size: 45px;
+    font-size: 4vmin;
 }
 
 .countdown-timer {
@@ -52,15 +54,15 @@
     flex-direction: row;
     width: 100vw;
     height: 70vh;
-    border-top: 20px;
-    border-bottom: 20px;
+    border-top: 2vh;
+    border-bottom: 2vh;
     border-left: 0px;
     border-right: 0px;
     border-style: solid;
     color: white;
-    text-shadow: 10px 10px 10px rgb(14, 19, 76);
+    text-shadow: 7px 7px 7px rgb(0, 10, 101);
     background-color: rgb(30, 41, 109);
-    background: linear-gradient(180deg, rgb(20, 66, 167) 0%, rgb(20, 46, 134) 50%, rgb(23, 38, 122) 100%);
+    background: linear-gradient(180deg, rgb(3, 49, 148) 0%, rgb(19, 39, 106) 50%, rgb(0, 17, 99) 100%);
 }
 
 .countdown-timer div {
@@ -68,11 +70,11 @@
 }
 
 .countdown-timer p {
-    font-size: 110px;
+    font-size: 13vmin;
 }
 
 .countdown-timer span {
-    font-size: 20px;
+    font-size: 3vmin;
 }
 
 .body-container button {
