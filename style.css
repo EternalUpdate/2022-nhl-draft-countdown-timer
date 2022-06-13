@@ -9,14 +9,13 @@
 .flex-container {
     display: flex;
     flex-direction: column;
+    background-color: rgb(169, 48, 74);
+    background: linear-gradient(180deg, rgb(155, 25, 25) 0%, rgb(165, 19, 19) 50%, rgb(151, 22, 22) 100%);
 }
 
 .body-container {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(169, 48, 74);
-    background: linear-gradient(180deg, rgb(155, 25, 25) 0%, rgb(165, 19, 19) 50%, rgb(151, 22, 22) 100%);
-    padding: 0 8%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,7 +52,7 @@
     align-items: center;
     flex-direction: row;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     border-top: 2vh;
     border-bottom: 2vh;
     border-left: 0px;
@@ -70,19 +69,28 @@
 }
 
 .countdown-timer p {
-    font-size: 13vmin;
+    font-size: 11vmin;
 }
 
 .countdown-timer span {
     font-size: 3vmin;
 }
 
-.body-container button {
-    background: transparent;
-    border: 2px solid white;
-    outline: none;
-    padding: 12px 25px;
-    margin: 30px;
-    color:white;
-    cursor: pointer;
+.bottom-container {
+    height: 10vh;
+    width: 100%;
+    position: relative;
+}
+
+.bottom-container p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2vmin;
+    font-weight: 100;
+    color: rgb(255, 255, 255)
+}
+
+.bottom-container a {
+    color: white;
 }
