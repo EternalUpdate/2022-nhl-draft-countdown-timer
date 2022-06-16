@@ -1,10 +1,16 @@
-let countdownDate = new Date("July 7, 2022 00:00:00").getTime();
+var DateTime = luxon.DateTime;
+// let countdownDate = new Date("July 7, 2022 00:00:00");
+let countdownDate = DateTime.fromObject(
+  { year: 2022, month: 7, day: 7 },
+  { zone: "America/Toronto" }
+);
+console.log(countdownDate);
 
 function startCountdown() {
   let now, timeLeft, days, hours, minutes, seconds;
 
   function updateCountdown() {
-    now = new Date().getTime();
+    now = DateTime.now();
     timeLeft = countdownDate - now; // in milliseconds
 
     days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
