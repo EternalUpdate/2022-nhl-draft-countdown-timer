@@ -1,5 +1,10 @@
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
+
 var DateTime = luxon.DateTime;
-// let countdownDate = new Date("July 7, 2022 00:00:00");
+
 let countdownDate = DateTime.fromObject(
   { year: 2022, month: 7, day: 7 },
   { zone: "America/Toronto" }
