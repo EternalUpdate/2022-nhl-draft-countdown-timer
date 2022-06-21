@@ -6,7 +6,7 @@ if ("serviceWorker" in navigator) {
 var DateTime = luxon.DateTime;
 
 let countdownDate = DateTime.fromObject(
-  { year: 2022, month: 7, day: 7, hour: 7 },
+  { year: 2022, month: 7, day: 7, hour: 19 },
   { zone: "America/Toronto" }
 );
 console.log(countdownDate);
